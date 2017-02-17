@@ -1,0 +1,45 @@
+.chrome {
+  display: grid;
+  grid-template-columns: [g-left] 180px [g-left-cards] auto [g-right-cards] 180px [g-right];
+  grid-template-rows: [g-top] 10px [g-status] 200px [g-above-cards] 75px [g-between-cards] 75px [g-below-cards] 200px [g-bottom];
+  width: 1020px;
+  grid-gap: 5px;
+  padding: 5px;
+  background: silver;
+  border: solid 2px black;
+  margin: 10px;
+}
+
+.chrome-toolbar {
+  border: solid 1px black;
+  grid-column: g-left-cards/g-right-cards;
+  grid-row: g-between-cards/g-below-cards;
+}
+
+.chrome-mainContent {
+  border: solid 2px black;
+  grid-column: g-left-cards/g-right-cards;
+  grid-row: g-status/g-between-cards;
+  background: var(--alto);
+}
+
+.chrome-character-0 {
+  grid-column: g-left/g-left-cards;
+  grid-row: g-status/g-between-cards;
+}
+
+.chrome-character-1 {
+  grid-column: g-left/g-left-cards;
+  grid-row: g-between-cards/g-bottom;
+}
+
+.chrome-character-2 {
+  grid-column: g-right-cards/g-right;
+  grid-row: g-status/g-between-cards;
+}
+
+.chrome-character-3 {
+  grid-column: g-right-cards/g-right;
+  grid-row: g-between-cards/g-bottom;
+}
+

@@ -1,0 +1,19 @@
+.contentFrame {
+  background: silver;
+  border: 15px solid black;
+  border-image: url(http://www.loversiq.com/daut/as/m/1/18-best-photos-of-frame-border-design-islamic-borders-and-frames-black-designs_borders-design_interior-design_interior-design-software-restaurant-definition-famous-designers-what-is-degree-magazines-b_797x1035.png) 50;
+}
+
+.contentFrame-wrapper {
+  max-width: 150px;
+  max-height: 150px;
+  width: 100%;
+  height: 100%;
+  border: solid 1px black;
+  overflow: hidden;
+}
+
+.contentFrame-content {
+  width: 100%;
+}
+

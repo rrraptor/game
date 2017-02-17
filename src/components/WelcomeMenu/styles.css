@@ -1,0 +1,94 @@
+:root {
+  --sorrel-brown: #CBB28B;
+  --cod-gray: #161616;
+  --alto: #d7d7d7;
+}
+
+.chrome {
+  display: grid;
+  grid-template-columns: [left] 180px [left-cards] auto [right-cards] 180px [right];
+  grid-template-rows: [top] 10px [status] 250px [top-cards] 50px [bottom-cards] 250px [bottom];
+  width: 1020px;
+  grid-gap: 5px;
+  padding: 5px;
+  background: silver;
+  border: solid 2px black;
+}
+
+.chromeFiller img {
+  width: 100%;
+  height: 100%;
+}
+.chromeFiller--left {
+  grid-column: left/left-cards;
+  grid-row: top-cards/bottom-cards;
+}
+.chromeFiller--right {
+  grid-column: right-cards/right;
+  grid-row: top-cards/bottom-cards;
+}
+
+.console {
+  display: flex;
+  flex-flow: column nowrap;
+  background: lightgrey;
+  border: solid 1px black;
+  grid-column: left-cards/right-cards;
+  grid-row: bottom-cards/bottom;
+}
+
+.console-textArea {
+  flex: 1 0 0;
+  background: var(--cod-gray);
+  color: white;
+}
+
+.console-input {
+  flex: 0;
+  box-sizing: border-box;
+  border: 1px 0 0 0;
+}
+
+.mainToolbar {
+  border: solid 1px black;
+  grid-column: left-cards/right-cards;
+  grid-row: top-cards/bottom-cards;
+}
+
+.mainContent {
+  border: solid 2px black;
+  grid-column: left-cards/right-cards;
+  grid-row: status/top-cards;
+  background: var(--alto);
+}
+
+.characterCard {
+  background: silver;
+  border: 15px solid black;
+  border-image: url(http://www.loversiq.com/daut/as/m/1/18-best-photos-of-frame-border-design-islamic-borders-and-frames-black-designs_borders-design_interior-design_interior-design-software-restaurant-definition-famous-designers-what-is-degree-magazines-b_797x1035.png) 50;
+}
+
+.characterCard img {
+  width:98%;
+  border: solid;
+}
+
+.characterCard--1 {
+  grid-column: left/left-cards;
+  grid-row: status/top-cards;
+}
+
+.characterCard--2 {
+  grid-column: left/left-cards;
+  grid-row: bottom-cards/bottom;
+}
+
+.characterCard--3 {
+  grid-column: right-cards/right;
+  grid-row: status/top-cards;
+}
+
+.characterCard--4 {
+  grid-column: right-cards/right;
+  grid-row: bottom-cards/bottom;
+}

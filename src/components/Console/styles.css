@@ -1,0 +1,21 @@
+.console {
+  display: flex;
+  flex-flow: column nowrap;
+  background: lightgrey;
+  border: solid 1px black;
+  grid-column: g-left-cards/g-right-cards;
+  grid-row: g-below-cards/g-bottom;
+}
+
+.console-textArea {
+  flex: 1 0 0;
+  background: var(--cod-gray);
+  color: white;
+}
+
+.console-input {
+  flex: 0;
+  box-sizing: border-box;
+  border: 1px 0 0 0;
+}
+
